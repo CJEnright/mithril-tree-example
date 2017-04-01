@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mithril.js file tree</title>
+  <style type="text/css">
+    body {
+      font-size: 18px;
+    }
+
+    #treeRoot {
+       cursor: pointer;
+    }
+
+    .noselect {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+  </style>
+</head>  
+<body>
+
+<p>A recreation of <a href="https://vuejs.org/v2/examples/tree-view.html">Vue file tree example</a> using <a href="https://mithril.js.org/">Mthril.js</a></p>
+
+<p>Double click on an item to turn it into a folder</p>
+
+<ul id='treeRoot' class='root noselect'></ul>
+
+<script type="text/javascript" src="https://unpkg.com/mithril/mithril.js"></script>
+<script type="text/javascript" src="./file-tree-script.js"></script>
+
+</body>
+</html>
